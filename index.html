@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Abstract Token Deployer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
-<style>
-  body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
-  input, button { display: block; margin: 0.5rem 0; width: 100%; padding: 0.5rem; }
-  button { background: #0b6bff; color: white; border: none; cursor: pointer; }
-  button:hover { background: #084dc7; }
-  #status { margin-top: 1rem; white-space: pre-wrap; }
-</style>
+<title>Deploy Tokens</title>
+<script src="https://cdn.ethers.io/lib/ethers-6.6.0.min.js" type="application/javascript"></script>
 </head>
 <body>
-<h1>🚀 Deploy Your Token on Abstract</h1>
+<h2>Deploy Your Token</h2>
 <form id="deployForm">
-  <label>Name: <input type="text" id="tokenName" placeholder="My Token" required></label>
-  <label>Symbol: <input type="text" id="tokenSymbol" placeholder="MTK" required></label>
-  <label>Total Supply: <input type="number" id="totalSupply" placeholder="1000000" required></label>
-  <button type="submit">Deploy Token</button>
+  <label>Token Name: <input id="tokenName" required></label><br>
+  <label>Token Symbol: <input id="tokenSymbol" required></label><br>
+  <label>Total Supply: <input id="totalSupply" required></label><br>
+  <button type="submit">Deploy</button>
 </form>
 <p id="status"></p>
-<script src="app.js" type="module"></script>
+
+<script src="deploy.js"></script>
 </body>
 </html>
