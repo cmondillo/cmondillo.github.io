@@ -30,7 +30,7 @@ document.getElementById("deployForm").addEventListener("submit", async (e) => {
       params: [{
         chainId: "0xABSTRACT_CHAIN_ID",
         chainName: "Abstract",
-        rpcUrls: ["YOUR_ABSTRACT_RPC_URL"],
+        rpcUrls: ["https://api.mainnet.abs.xyz"],
         nativeCurrency: { name: "ABT", symbol: "ABT", decimals: 18 },
         blockExplorerUrls: ["https://explorer.abstract.network"]
       }]
