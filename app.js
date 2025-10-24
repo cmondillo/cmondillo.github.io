@@ -28,7 +28,7 @@ document.getElementById("deployForm").addEventListener("submit", async (e) => {
     await window.ethereum.request({
       method: "wallet_addEthereumChain",
       params: [{
-        chainId: "0xABSTRACT_CHAIN_ID",
+        chainId: "2741",
         chainName: "Abstract",
         rpcUrls: ["https://api.mainnet.abs.xyz"],
         nativeCurrency: { name: "ABT", symbol: "ABT", decimals: 18 },
