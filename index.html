@@ -1,14 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Abstract Token Deployer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
-    input, button { display: block; margin: 0.5rem 0; width: 100%; padding: 0.5rem; }
-    button { background: #0b6bff; color: white; border: none; cursor: pointer; }
-    button:hover { background: #084dc7; }
-    #status { margin-top: 1rem; white-space: pre-wrap; }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deploy ERC20 Token</title>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <h1>Deploy Your ERC20 Token</h1>
+  <form id="deployForm">
+    <label>
+      Token Name:
+      <input type="text" id="name" required>
+    </label>
+    <br><br>
+    <label>
+      Token Symbol:
+      <input type="text" id="symbol" required>
+    </label>
+    <br><br>
+    <label>
+      Initial Supply:
+      <input type="number" id="supply" required>
+    </label>
+    <br><br>
+    <button type="submit">Deploy Token</button>
+  </form>
+  <p id="status"></p>
+</body>
+</html>
