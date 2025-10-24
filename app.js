@@ -75,7 +75,7 @@ document.getElementById("deployForm").addEventListener("submit", async (e) => {
     // ✅ Include 0.01 ETH fee
     status.textContent = "🚀 Deploying your token... (0.01 ETH fee required)";
     const contract = await factory.deploy(name, symbol, supply, {
-      value: ethers.parseEther("0.01") // 👈 send payment to constructor
+      value: ethers.parseEther("0.0001") // 👈 send payment to constructor
     });
 
     await contract.waitForDeployment();
